@@ -31,7 +31,7 @@ public class Craps {
             default:
                 gameStatus = Status.CONTINUE;
                 myPoint = sumOfDice;
-                System.out.printf("El punto es %d\n", myPoint);
+                System.out.printf("Point is %d", myPoint);
                 break;
         }
         while (gameStatus == Status.CONTINUE) {
@@ -42,7 +42,7 @@ public class Craps {
                 gameStatus = Status.LOST;
         }
         if (gameStatus == Status.WON)
-            System.out.println("El jugador gano");
+            System.out.println("Player wins");
         else
             System.out.println("El jugador perdio");
     }
@@ -52,7 +52,7 @@ public class Craps {
         int die2 = 1 + randomNumbers.nextInt(6);
         int sum = die1 + die2; // sum of die values
 
-        System.out.printf("EL jugador saco %d + %d = %d\n", die1, die2, sum);
+        System.out.printf("Player rolled %d + %d = %d\n", die1, die2, sum);
         return sum;
     }
 }
