@@ -44,13 +44,13 @@ public class Craps {
         if (gameStatus == Status.WON)
             System.out.println("Player wins");
         else
-            System.out.println("El jugador perdio");
+            System.out.println("Player lose");
     }
 
     public static int rollDice(){
         int die1 = 1 + randomNumbers.nextInt(6);
         int die2 = 1 + randomNumbers.nextInt(6);
-        int sum = die1 + die2; // sum of die values
+        int sum = die1 + die2;
 
         System.out.printf("Player rolled %d + %d = %d\n", die1, die2, sum);
         return sum;
